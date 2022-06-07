@@ -1,10 +1,11 @@
 
 import './App.css';
+import Auth from './components/auth';
 
 function App() {
   return (
     <div className="App">
-     <h1>Hello</h1>
+     <Auth/>
     </div>
   );
 }

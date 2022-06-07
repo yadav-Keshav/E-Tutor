@@ -1,5 +1,10 @@
-const express=require('express');
-
-const app=express();
+const express = require('express');
+const cors = require('cors');
+const authRouter = require('./routes/authRouter');
+const cookieParser = require('cookie-parser');
+const app = express();
 app.use(express.json());
-module.exports=app;
+app.use(cookieParser());
+app.use(cors());
+app.use("/api/v1/auth", authRouter);
+module.exports = app;

@@ -1,5 +1,5 @@
 {
-  "name": "e-learning",
+  "name": "e-tutor",
   "version": "1.0.0",
   "main": "backend/server.js",
   "author": "keshav Kumar",
@@ -9,6 +9,9 @@
     "dev": "nodemon backend/sever.js"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "create-react-app": "^5.0.1",
     "dotenv": "^16.0.1",
     "e-learning": "./",
